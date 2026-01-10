@@ -8,4 +8,4 @@ val s1b = Stream.emits(List(1, 2, 3))
 s1.toList
 s1.toVector
 
-val s1c: fs2.Stream[[x] =>> fs2.Pure[x], Int] = Stream(1, 2, 3)
+(Stream(1, 2, 3) ++ Stream(4)).toList
